@@ -8,7 +8,6 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Description;
 using CloneCraft.WebApi.Areas.HelpPage.Models;
-using CloneCraft.WebApi.Areas.HelpPage.SampleGeneration;
 
 namespace CloneCraft.WebApi.Areas.HelpPage
 {

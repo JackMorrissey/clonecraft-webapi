@@ -1,6 +1,5 @@
 using System.Web.Http;
 using System.Web.Mvc;
-using CloneCraft.WebApi.Areas.HelpPage.App_Start;
 
 namespace CloneCraft.WebApi.Areas.HelpPage
 {

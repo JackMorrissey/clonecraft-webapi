@@ -1,6 +1,6 @@
 using System;
 
-namespace CloneCraft.WebApi.Areas.HelpPage.SampleGeneration
+namespace CloneCraft.WebApi.Areas.HelpPage
 {
     /// <summary>
     /// This represents an invalid sample on the help page. There's a display template named InvalidSample associated with this class.

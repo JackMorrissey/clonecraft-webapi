@@ -1,5 +1,7 @@
-﻿using System.Web.Http;
-using System.Web.Http.Cors;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web.Http;
 
 namespace CloneCraft.WebApi
 {
@@ -17,8 +19,6 @@ namespace CloneCraft.WebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
-            config.EnableCors(new EnableCorsAttribute(origins: "*", headers: "*", methods: "*"));
         }
     }
 }
