@@ -42,7 +42,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NinjectModules\ExampleNinjectModule.cs" />
+    <Compile Include="NinjectModules\SingletonCommanderModule.cs" />
     <Compile Include="StartCommander.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

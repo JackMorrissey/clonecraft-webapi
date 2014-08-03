@@ -10,7 +10,7 @@ namespace CloneCraft.WebApi.Controllers
         /// <returns></returns>
         public string Get()
         {
-            return "Thump thump";
+            return "Heart is beating!";
         }
     }
 }
