@@ -2,7 +2,7 @@
 using CloneCraft.Models.Commands;
 using CloneCraft.Models.Entities;
 
-namespace Interfaces
+namespace CloneCraft.Interfaces
 {
     public interface ICommander
     {

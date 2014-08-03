@@ -7,8 +7,8 @@
     <ProjectGuid>{4C066074-1879-49AC-ADAF-7D7758F55251}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Interfaces</RootNamespace>
-    <AssemblyName>Interfaces</AssemblyName>
+    <RootNamespace>CloneCraft.Interfaces</RootNamespace>
+    <AssemblyName>CloneCraft.Interfaces</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

@@ -1,10 +1,10 @@
 ﻿using System.Linq;
+using CloneCraft.Interfaces;
 using CloneCraft.Models;
 using CloneCraft.Models.Commands;
 using System;
 using System.Collections.Generic;
 using CloneCraft.Models.Entities;
-using Interfaces;
 
 namespace CloneCraft.StartBot
 {
