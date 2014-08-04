@@ -161,6 +161,7 @@ namespace CloneCraft.StartBot
 
         private Resource GetClosestResource(Minion miner)
         {
+            if (_status.Vision.Resources == null || !_status.Vision.Resources.Any()) return null;
             Resource resourceTarget = null;
             foreach (var resource in _status.Vision.Resources)
             {
