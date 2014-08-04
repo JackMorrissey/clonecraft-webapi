@@ -8,6 +8,9 @@ namespace CloneCraft.Models.Entities
     [DataContract]
     public class BoardStatus
     {
+
+        [DataMember]
+        public string GameId { get; set; }
         [DataMember]
         public int Round { get; set; }
         [DataMember]
