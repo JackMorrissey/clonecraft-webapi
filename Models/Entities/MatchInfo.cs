@@ -1,12 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Entities
 {
+    [DataContract]
     public class MatchInfo
     {
-        [JsonProperty("best_of")]
+        [DataMember(Name = "best_of")]
         public int BestOf { get; set; }
-        [JsonProperty("opponent_name")]
+        [DataMember(Name = "opponent_name")]
         public string OpponentName { get; set; }
     }
 }

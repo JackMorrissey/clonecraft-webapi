@@ -1,8 +1,11 @@
-﻿using CloneCraft.Models.Commands.Params;
+﻿using System;
+using System.Runtime.Serialization;
+using CloneCraft.Models.Commands.Params;
 using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands
 {
+    [DataContract]
     public class BuildLesserMinionCommand : Command
     {
         public BuildLesserMinionCommand(int damage, int range, int health, int mining, int speed, int vision, int x, int y)
@@ -20,7 +23,7 @@ namespace CloneCraft.Models.Commands
                 }, x, y);
         }
 
-        [JsonProperty("params")]
+        [DataMember(Name = "params")]
         public BuildParams Params { get; set; }
     }
 }

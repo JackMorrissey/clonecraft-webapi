@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands.Params
 {
+    [DataContract]
     public class MineParams
     {
         public MineParams(int x, int y)
@@ -9,9 +12,9 @@ namespace CloneCraft.Models.Commands.Params
             X = x;
             Y = y;
         }
-        [JsonProperty("x")]
+        [DataMember(Name = "x")]
         public int X { get; set; }
-        [JsonProperty("y")]
+        [DataMember(Name = "y")]
         public int Y { get; set; }
     }
 }

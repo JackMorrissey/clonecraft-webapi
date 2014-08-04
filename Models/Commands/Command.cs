@@ -1,12 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands
 {
+    [DataContract]
 	abstract public class Command
     {
-        [JsonProperty("commandName")]
+        [DataMember(Name = "commandName")]
         public string CommandName { get; set; }
-        [JsonProperty("minionId")]
+        [DataMember(Name = "minionId")]
 		public int? MinionId { get; set; }
 	}
 }

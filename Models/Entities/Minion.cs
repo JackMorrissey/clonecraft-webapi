@@ -1,22 +1,25 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Entities
 {
+    [DataContract]
     public class Minion : Entity
     {
-        [JsonProperty("g")]
+        [DataMember(Name = "g")]
         public int Gold { get; set; }
-        [JsonProperty("hp")]
+        [DataMember(Name = "hp")]
         public int Health { get; set; }
-        [JsonProperty("mi")]
+        [DataMember(Name = "mi")]
         public int Mining { get; set; }
-        [JsonProperty("r")]
+        [DataMember(Name = "r")]
         public int Range { get; set; }
-        [JsonProperty("d")]
+        [DataMember(Name = "d")]
         public int Damage { get; set; }
-        [JsonProperty("sp")]
+        [DataMember(Name = "sp")]
         public int Speed { get; set; }
-        [JsonProperty("vi")]
+        [DataMember(Name = "vi")]
         public int Vision { get; set; }
     }
 }

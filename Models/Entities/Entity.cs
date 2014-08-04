@@ -1,14 +1,17 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Entities
 {
+    [DataContract]
     public abstract class Entity
     {
-        [JsonProperty("id")]
+        [DataMember(Name = "id")]
         public int Id { get; set; }
-        [JsonProperty("x")]
+        [DataMember(Name = "x")]
         public int X { get; set; }
-        [JsonProperty("y")]
+        [DataMember(Name = "y")]
         public int Y { get; set; }
     }
 }

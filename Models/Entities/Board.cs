@@ -1,12 +1,15 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Entities
 {
+    [DataContract]
     public class Board
     {
-        [JsonProperty("w")]
+        [DataMember(Name = "w")]
         public int Width { get; set; }
-        [JsonProperty("h")]
+        [DataMember(Name = "h")]
         public int Height { get; set; }
     }
 }

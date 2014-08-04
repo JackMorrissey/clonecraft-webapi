@@ -1,8 +1,11 @@
-﻿using CloneCraft.Models.Commands.Params;
+﻿using System;
+using System.Runtime.Serialization;
+using CloneCraft.Models.Commands.Params;
 using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands
 {
+    [DataContract]
     public class MoveCommand : Command
     {
         public MoveCommand(int minionId, char direction)
@@ -12,7 +15,7 @@ namespace CloneCraft.Models.Commands
             Params = new MoveParams(direction);
         }
 
-        [JsonProperty("params")]
+        [DataMember(Name = "params")]
         public MoveParams Params { get; set; }
     }
 }

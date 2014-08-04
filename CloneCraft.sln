@@ -12,6 +12,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocContainer", "IocContainer\IocContainer.csproj", "{21CC1D90-2637-4313-904A-83978CCA599B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csproj", "{FBAC238F-EBDE-40BB-8779-2E329A7A96FA}"
+	ProjectSection(ProjectDependencies) = postProject
+		{0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B} = {0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Cors;
 
@@ -22,6 +23,8 @@ namespace CloneCraft.WebApi
             );
 
             config.EnableCors(new EnableCorsAttribute(origins: "*", headers: "*", methods: "*"));
+
+            config.Formatters.JsonFormatter.SupportedMediaTypes.Add(new MediaTypeHeaderValue("text/plain"));
         }
     }
 }

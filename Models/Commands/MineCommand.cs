@@ -1,8 +1,11 @@
-﻿using CloneCraft.Models.Commands.Params;
+﻿using System;
+using System.Runtime.Serialization;
+using CloneCraft.Models.Commands.Params;
 using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands
 {
+    [DataContract]
     public class MineCommand : Command
     {
         public MineCommand(int minionId, int x, int y)
@@ -12,7 +15,7 @@ namespace CloneCraft.Models.Commands
             Params = new MineParams(x, y);
         }
 
-        [JsonProperty("params")]
+        [DataMember(Name = "params")]
         public MineParams Params { get; set; }
     }
 }

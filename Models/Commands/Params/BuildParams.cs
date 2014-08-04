@@ -1,7 +1,10 @@
-﻿using Newtonsoft.Json;
+﻿using System;
+using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands.Params
 {
+    [DataContract]
     public class BuildParams
     {
         public BuildParams(Stats stats, int x, int y)
@@ -10,27 +13,28 @@ namespace CloneCraft.Models.Commands.Params
             X = x;
             Y = y;
         }
-        [JsonProperty("x")]
+        [DataMember(Name = "x")]
         public int X { get; set; }
-        [JsonProperty("y")]
+        [DataMember(Name = "y")]
         public int Y { get; set; }
-        [JsonProperty("stats")]
+        [DataMember(Name = "stats")]
         public Stats Stats { get; set; }
     }
 
+    [DataContract]
     public class Stats
     {
-        [JsonProperty("d")]
+        [DataMember(Name = "d")]
         public int Damage { get; set; }
-        [JsonProperty("r")]
+        [DataMember(Name = "r")]
         public int Range { get; set; }
-        [JsonProperty("h")]
+        [DataMember(Name = "h")]
         public int Health { get; set; }
-        [JsonProperty("m")]
+        [DataMember(Name = "m")]
         public int Mining { get; set; }
-        [JsonProperty("s")]
+        [DataMember(Name = "s")]
         public int Speed { get; set; }
-        [JsonProperty("v")]
+        [DataMember(Name = "v")]
         public int Vision { get; set; }
 
     }

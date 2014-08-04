@@ -1,13 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Runtime.Serialization;
 using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Entities
 {
+    [DataContract]
     public class Vision
     {
-        [JsonProperty("bases")]
+        [DataMember(Name = "bases")]
         public List<Base> EnemyBases { get; set; }
-        [JsonProperty("minions")]
+        [DataMember(Name = "minions")]
         public List<Minion> EnemyMinions { get; set; }
         public List<Resource> Resources { get; set; }
     }

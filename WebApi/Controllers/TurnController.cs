@@ -7,6 +7,8 @@ using System.Web.Http;
 using CloneCraft.Interfaces;
 using CloneCraft.Models.Commands;
 using CloneCraft.Models.Entities;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 
 namespace CloneCraft.WebApi.Controllers
 {
@@ -18,8 +20,9 @@ namespace CloneCraft.WebApi.Controllers
             _commander = commander;
         }
 
-        public List<Command> Post(BoardStatus boardStatus)
+        public List<Command> Post([FromBody]JToken json)
         {
+            var boardStatus = json.ToObject<BoardStatus>();
             if (boardStatus.Round == 1) _commander.StartingGame();
 
             // Create commands to do

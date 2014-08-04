@@ -1,8 +1,11 @@
-﻿using CloneCraft.Models.Commands.Params;
+﻿using System;
+using System.Runtime.Serialization;
+using CloneCraft.Models.Commands.Params;
 using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Commands
 {
+    [DataContract]
     public class HandOffCommand : Command
     {
         public HandOffCommand(int handerId, int handeeId)
@@ -12,7 +15,7 @@ namespace CloneCraft.Models.Commands
             Params = new HandOffParams(handeeId);
         }
 
-        [JsonProperty("params")]
+        [DataMember(Name = "params")]
         public HandOffParams Params { get; set; }
     }
 }
