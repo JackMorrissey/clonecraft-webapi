@@ -93,7 +93,6 @@
     <Compile Include="Controllers\HeartbeatController.cs" />
     <Compile Include="Controllers\MatchStartController.cs" />
     <Compile Include="Controllers\ResetController.cs" />
-    <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Controllers\TurnController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
