@@ -7,8 +7,8 @@
     <ProjectGuid>{0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>CloneCraft.StartBot</RootNamespace>
-    <AssemblyName>CloneCraft.StartBot</AssemblyName>
+    <RootNamespace>CloneCraft.Implementations.StartBot</RootNamespace>
+    <AssemblyName>CloneCraft.Implementations.StartBot</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -47,11 +47,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Interfaces\Interfaces.csproj">
+    <ProjectReference Include="..\..\Interfaces\Interfaces.csproj">
       <Project>{4c066074-1879-49ac-adaf-7d7758f55251}</Project>
       <Name>Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Models\Models.csproj">
+    <ProjectReference Include="..\..\Models\Models.csproj">
       <Project>{bb2e0525-d018-41d9-ad90-9558c1735a32}</Project>
       <Name>Models</Name>
     </ProjectReference>

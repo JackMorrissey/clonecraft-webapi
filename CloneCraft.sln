@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "Models\Models.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interfaces", "Interfaces\Interfaces.csproj", "{4C066074-1879-49AC-ADAF-7D7758F55251}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartBot", "StartBot\StartBot.csproj", "{0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartBot", "Implementations\StartBot\StartBot.csproj", "{0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocContainer", "IocContainer\IocContainer.csproj", "{21CC1D90-2637-4313-904A-83978CCA599B}"
 EndProject
@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "WebApi\WebApi.csp
 	ProjectSection(ProjectDependencies) = postProject
 		{0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B} = {0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B}
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Implementations", "Implementations", "{5F7153B9-7B58-4D2C-B127-052A01D39FF2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,5 +47,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{0B5ABF4F-7D0A-41F8-9D25-32C61FBF018B} = {5F7153B9-7B58-4D2C-B127-052A01D39FF2}
 	EndGlobalSection
 EndGlobal

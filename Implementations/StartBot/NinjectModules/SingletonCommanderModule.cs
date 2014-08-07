@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CloneCraft.Interfaces;
+﻿using CloneCraft.Interfaces;
 using Ninject.Modules;
 
-namespace CloneCraft.StartBot.NinjectModules
+namespace CloneCraft.Implementations.StartBot.NinjectModules
 {
     class SingletonCommanderModule: NinjectModule
     {

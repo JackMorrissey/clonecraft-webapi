@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using CloneCraft.Models.Entities;
 
-namespace CloneCraft.StartBot
+namespace CloneCraft.Implementations.StartBot
 {
     public class Commander : ICommander
     {

@@ -124,7 +124,7 @@
       <Project>{BB2E0525-D018-41D9-AD90-9558C1735A32}</Project>
       <Name>Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\StartBot\StartBot.csproj">
+    <ProjectReference Include="..\Implementations\StartBot\StartBot.csproj">
       <Project>{0b5abf4f-7d0a-41f8-9d25-32c61fbf018b}</Project>
       <Name>StartBot</Name>
     </ProjectReference>
