@@ -7,11 +7,11 @@ namespace CloneCraft.Models.Entities
     [DataContract]
     public abstract class Entity
     {
-        [DataMember(Name = "id")]
+        [DataMember]
         public int Id { get; set; }
-        [DataMember(Name = "x")]
+        [DataMember]
         public int X { get; set; }
-        [DataMember(Name = "y")]
+        [DataMember]
         public int Y { get; set; }
     }
 }

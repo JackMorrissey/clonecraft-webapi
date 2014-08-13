@@ -12,6 +12,7 @@ namespace CloneCraft.Models.Entities
         public List<Base> EnemyBases { get; set; }
         [DataMember(Name = "minions")]
         public List<Minion> EnemyMinions { get; set; }
+        [DataMember]
         public List<Resource> Resources { get; set; }
     }
 }
