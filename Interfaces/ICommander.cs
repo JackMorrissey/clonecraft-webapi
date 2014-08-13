@@ -22,10 +22,10 @@ namespace CloneCraft.Interfaces
         void StartingMatch(MatchInfo matchInfo);
         
         /// <summary>
-        /// This method runs at the start of a new game, do any initialization or resetting here 
+        /// This method runs at the start of a new game on turn 1, do any initialization or resetting here
         /// </summary>
         /// <returns></returns>
-        string StartingGame();
+        void Initialize(BoardStatus status);
         
         /// <summary>
         /// Given a status, do these commands

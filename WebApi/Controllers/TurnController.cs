@@ -23,7 +23,7 @@ namespace CloneCraft.WebApi.Controllers
         public List<Command> Post([FromBody]JToken json)
         {
             var boardStatus = json.ToObject<BoardStatus>();
-            if (boardStatus.Round == 1) _commander.StartingGame();
+            if (boardStatus.Round == 1) _commander.Initialize(boardStatus);
 
             // Create commands to do
             var commands = _commander.GetCommands(boardStatus);

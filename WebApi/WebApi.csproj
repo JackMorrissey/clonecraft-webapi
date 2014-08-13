@@ -92,7 +92,6 @@
     <Compile Include="Controllers\GameResultController.cs" />
     <Compile Include="Controllers\HeartbeatController.cs" />
     <Compile Include="Controllers\MatchStartController.cs" />
-    <Compile Include="Controllers\ResetController.cs" />
     <Compile Include="Controllers\TurnController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

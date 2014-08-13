@@ -21,26 +21,12 @@ namespace CloneCraft.Implementations.StartBot
             _randomGenerator = new Random();
         }
 
-        // This method runs at the end of every game, you may want to use the game results
-        public void GameResult(GameResult gameResult)
+        // This method runs at the start of every match on turn 1
+        public void Initialize(BoardStatus boardStatus)
         {
-            //you may want to adjust your strategy here if you lost a game
+            // Set up any data structures here
         }
 
-        // This method runs at the start of every match
-        public void StartingMatch(MatchInfo bestOf)
-        {
-            //you may want to reset and strategy adjustments from your previous match
-            //you may want to hardcode certain strategies against certain opponents
-        }
-
-        // This method runs at the start of a new game, do any initialization or resetting here 
-        public string StartingGame()
-        {
-            return "good to go!";
-        }
-
-        // Do not alter/remove this method signature
         public List<Command> GetCommands(BoardStatus status)
         {
             _status = status;
@@ -66,6 +52,20 @@ namespace CloneCraft.Implementations.StartBot
             }
 
             return _commands;
+        }
+
+        public void StartingMatch(MatchInfo matchInfo)
+        {
+            // This method runs at the start of every match
+            // you may want to reset and strategy adjustments from your previous match
+            // you may want to hardcode certain strategies against certain opponents
+        }
+
+        // This method runs at the end of every game, you may want to use the game results
+        public void GameResult(GameResult gameResult)
+        {
+            // This method runs at the end of every game, you may want to use the game results
+            // You may want to adjust your strategy if you lost a game
         }
 
         private void MoveAround(IEnumerable<Minion> minions)
