@@ -61,6 +61,8 @@
     <Compile Include="Entities\Minion.cs" />
     <Compile Include="Entities\Resource.cs" />
     <Compile Include="Entities\Vision.cs" />
+    <Compile Include="Interfaces\ICoordinate.cs" />
+    <Compile Include="Interfaces\IEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
