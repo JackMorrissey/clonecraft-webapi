@@ -21,11 +21,11 @@ namespace CloneCraft.IocContainer
 
         public void Dispose()
         {
-            IDisposable disposable = resolver as IDisposable;
-            if (disposable != null)
-                disposable.Dispose();
+            //IDisposable disposable = resolver as IDisposable;
+            //if (disposable != null)
+            //    disposable.Dispose();
 
-            resolver = null;
+            //resolver = null;
         }
 
         public object GetService(Type serviceType)
@@ -57,7 +57,7 @@ namespace CloneCraft.IocContainer
 
         public IDependencyScope BeginScope()
         {
-            return new NinjectDependencyScope(kernel.BeginBlock());
+            return new NinjectDependencyScope(kernel);
         }
     }
 }
