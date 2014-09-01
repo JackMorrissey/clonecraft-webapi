@@ -5,6 +5,7 @@ using CloneCraft.Models.Commands;
 using System;
 using System.Collections.Generic;
 using CloneCraft.Models.Entities;
+using CloneCraft.Models.Interfaces;
 
 namespace CloneCraft.Implementations.StartBot
 {
@@ -175,19 +176,9 @@ namespace CloneCraft.Implementations.StartBot
             _commands.Add(new MineCommand(minion.Id, resource.X, resource.Y));
         }
 
-        private static bool IsNextTo(Entity fromEntity, Entity toEntity)
+        private static bool IsNextTo(IEntity fromEntity, IEntity toEntity)
         {
-            var fromSize = 1;
-            var toSize = 1;
-            if (fromEntity is Base)
-            {
-                fromSize = (fromEntity as Base).Size;
-            }
-            if (toEntity is Base)
-            {
-                toSize = (toEntity as Base).Size;
-            }
-            if (fromSize == 1 && toSize == 1)
+            if (fromEntity.Size == 1 && toEntity.Size == 1)
             {
                 return CoordsAreAdjacent(fromEntity.X, fromEntity.Y, toEntity.X, toEntity.Y);
             }
