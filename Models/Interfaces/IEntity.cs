@@ -2,7 +2,7 @@
 {
     public interface IEntity : ICoordinate
     {
-        int Id { get; set; }
+        int Id { get; }
         int Size { get; }
     }
 }
