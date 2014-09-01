@@ -1,6 +1,6 @@
 ﻿using System.Runtime.Serialization;
 
-namespace CloneCraft.Models.Entities
+namespace CloneCraft.Models
 {
     [DataContract]
     public class MatchInfo

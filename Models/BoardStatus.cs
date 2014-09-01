@@ -1,7 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
+using CloneCraft.Models.Entities;
 
-namespace CloneCraft.Models.Entities
+namespace CloneCraft.Models
 {
     [DataContract]
     public class BoardStatus
