@@ -111,6 +111,10 @@
     <Folder Include="App_Data\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Commodore\Commodore.csproj">
+      <Project>{8a6928b9-1b2a-4826-af01-aa914170e5cf}</Project>
+      <Name>Commodore</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Interfaces\Interfaces.csproj">
       <Project>{4C066074-1879-49AC-ADAF-7D7758F55251}</Project>
       <Name>Interfaces</Name>

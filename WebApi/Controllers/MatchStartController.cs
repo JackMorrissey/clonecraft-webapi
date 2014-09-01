@@ -5,6 +5,7 @@ using Newtonsoft.Json.Linq;
 
 namespace CloneCraft.WebApi.Controllers
 {
+    //TODO: replace this with a Commodore once matches have game associations
     public class MatchStartController : ApiController
     {
         private readonly ICommander _commander;
