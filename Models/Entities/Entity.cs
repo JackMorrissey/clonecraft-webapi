@@ -1,7 +1,5 @@
-﻿using System;
-using System.Runtime.Serialization;
+﻿using System.Runtime.Serialization;
 using CloneCraft.Models.Interfaces;
-using Newtonsoft.Json;
 
 namespace CloneCraft.Models.Entities
 {
